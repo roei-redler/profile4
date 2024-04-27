@@ -1,0 +1,9 @@
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 25px;
+    background-color: #000;
+    /* margin-left: 4px; */
+    margin-top: -2px;
+    position: absolute;
+}
