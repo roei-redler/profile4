@@ -26,19 +26,18 @@ allLinks.forEach((elem) => {
 });
 
 
-window.addEventListener("orientationchange", function() {
-  var orientation = window.orientation;
-
-  switch(orientation) {
-      case 0:
-      case 180:
-          // Portrait orientation
-          document.body.style.height = window.innerHeight + "px";
-          break;
-      case 90:
-      case -90:
-          // Landscape orientation
-          document.body.style.height = window.innerWidth + "px";
-          break;
+function handleOrientationChange() {
+  if (window.matchMedia("(orientation: portrait)").matches) {
+      // Portrait orientation
+      document.body.style.height = window.innerHeight + "px";
+  } else if (window.matchMedia("(orientation: landscape)").matches) {
+      // Landscape orientation
+      document.body.style.height = window.innerWidth + "px";
   }
-}, false);
+}
+
+window.addEventListener("resize", handleOrientationChange);
+
+// Call the function initially to set the correct height
+handleOrientationChange();
+
