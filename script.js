@@ -26,18 +26,3 @@ allLinks.forEach((elem) => {
 });
 
 
-function handleOrientationChange() {
-  if (window.matchMedia("(orientation: portrait)").matches) {
-      // Portrait orientation
-      document.body.style.height = window.innerHeight + "px";
-  } else if (window.matchMedia("(orientation: landscape)").matches) {
-      // Landscape orientation
-      document.body.style.height = window.innerWidth + "px";
-  }
-}
-
-window.addEventListener("resize", handleOrientationChange);
-
-// Call the function initially to set the correct height
-handleOrientationChange();
-

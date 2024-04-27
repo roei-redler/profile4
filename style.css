@@ -60,7 +60,29 @@ body {
     height: 100vh;
     user-select: none;
 }
+@media screen and (orientation: portrait) {
+    body {
+        transform: rotate(0deg);
+        transform-origin: top left;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: fixed;
+    }
+}
 
+@media screen and (orientation: landscape) {
+    body {
+        transform: rotate(90deg);
+        transform-origin: top left;
+        width: 100vh;
+        height: 100vw;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 100%;
+    }
+}
 .profile {
     background: var(--profile-bg);
     padding: 1rem;
