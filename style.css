@@ -276,7 +276,7 @@ body {
     padding: 0 0.25rem;
     font-size: 0.9rem;
     padding-bottom: 1rem;
-    min-height: 20rem;
+    min-height: 19rem;
 }
 
 #active-bg {
@@ -395,14 +395,65 @@ body {
   }
   
   .example-2 .icon-content a[data-social="Dynamics365"] ~ .tooltip {
-    background-color: #053e9a;
-  }
-  .example-2 .icon-content a[data-social="Dataverse"] ~ .tooltip {
-    background-color: #0bc312;
-  }
-  .example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
-    background-color: #ea4c89;
-  }
-  .example-2 .icon-content a[data-social="telegram"] ~ .tooltip {
-    background-color: #0088cc;
-  }
+    background-color: #053e9a; /* Dynamics 365 main color */
+}
+
+.example-2 .icon-content a[data-social="Dataverse"] ~ .tooltip {
+    background-color: #0bc312; /* Dataverse main color */
+}
+
+.example-2 .icon-content a[data-social="PowerAutomate"] ~ .tooltip {
+    background-color: #f7b500; /* Power Automate main color */
+}
+
+.example-2 .icon-content a[data-social="PowerApps"] ~ .tooltip {
+    background-color: #f65314; /* Power Apps main color */
+}
+
+.example-2 .icon-content a[data-social="PowerPages"] ~ .tooltip {
+    background-color: #673bb7; /* Power Pages main color */
+}
+
+.example-2 .icon-content a[data-social="PowerVirtualAgents"] ~ .tooltip {
+    background-color: #5d2d90; /* Power Virtual Agents main color */
+}
+
+.example-2 .icon-content a[data-social="PowerPlatform"] ~ .tooltip {
+    background-color: #0078d4; /* Power Platform main color */
+}
+
+.example-2 .icon-content a[data-social="HTML5"] ~ .tooltip {
+    background-color: #e44d26; /* HTML 5 main color */
+}
+
+.example-2 .icon-content a[data-social="CSS3"] ~ .tooltip {
+    background-color: #1572b6; /* CSS 3 main color */
+}
+
+.example-2 .icon-content a[data-social="JavaScript"] ~ .tooltip {
+    background-color: #f0db4f; /* JavaScript main color */
+}
+
+.example-2 .icon-content a[data-social="Excel"] ~ .tooltip {
+    background-color: #217346; /* Excel main color */
+}
+
+.example-2 .icon-content a[data-social="SharePoint"] ~ .tooltip {
+    background-color: #0078d4; /* SharePoint main color */
+}
+
+.example-2 .icon-content a[data-social="GitHub"] ~ .tooltip {
+    background-color: #181717; /* GitHub main color */
+}
+
+.example-2 .icon-content a[data-social="AzureDevOps"] ~ .tooltip {
+    background-color: #0078d4; /* Azure DevOps main color */
+}
+
+.example-2 .icon-content a[data-social="SQLDatabase"] ~ .tooltip {
+    background-color: #cc2929; /* SQL Database main color */
+}
+
+.example-2 .icon-content a[data-social="PostgreSQL"] ~ .tooltip {
+    background-color: #336791; /* PostgreSQL main color */
+}
