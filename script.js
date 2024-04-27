@@ -54,5 +54,24 @@ textElements.forEach(function(textElement) {
         textElement.textContent += char;
     }
 });
+function checkOrientation() {
+  // Check if the device is a mobile phone or tablet
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+      // Check if the device is in portrait mode
+      if (window.matchMedia("(orientation: portrait)").matches) {
+          document.getElementById('rotateMessage').style.display = 'none';
+      } else { // Device is in landscape mode
+          document.getElementById('rotateMessage').style.display = 'block';
+      }
+  } else { // Not a mobile device
+      document.getElementById('rotateMessage').style.display = 'none';
+  }
+}
+
+// Initial check
+checkOrientation();
+
+// Listen for screen orientation changes
+window.addEventListener('resize', checkOrientation);
 
 

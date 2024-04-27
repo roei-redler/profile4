@@ -60,23 +60,13 @@ body {
     height: 100vh;
     user-select: none;
 }
-@media screen and (orientation: portrait) {
-    body {
-        font-family: 'Manrope', sans-serif;
-        /*background: var(--bg);*/
-        background-color: rgb(14 25 50);
-        color: var(--text);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-        user-select: none;
-    }
+#rotateMessage {
+    display: none; /* Hide by default */
 }
 
 @media screen and (orientation: landscape) {
-    body::before {
-        content: "Please rotate your device";
+    #rotateMessage {
+        display: block; /* Show for mobile devices in landscape */
         position: fixed;
         top: 50%;
         left: 50%;
