@@ -371,7 +371,7 @@ body {
   .example-2 .icon-content .tooltip {
     position: absolute;
     top: -30px;
-    left: 50%;
+    left: 70%;
     transform: translateX(-50%);
     color: #fff;
     padding: 6px 10px;
@@ -380,6 +380,8 @@ body {
     visibility: hidden;
     font-size: 14px;
     transition: all 0.3s ease;
+    height: auto;
+    width: max-content;
   }
   .example-2 .icon-content:hover .tooltip {
     opacity: 1;
@@ -391,11 +393,11 @@ body {
     box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
   }
   
-  .example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
-    background-color: #1db954;
+  .example-2 .icon-content a[data-social="Dynamics365"] ~ .tooltip {
+    background-color: #053e9a;
   }
-  .example-2 .icon-content a[data-social="pinterest"] ~ .tooltip {
-    background-color: #bd081c;
+  .example-2 .icon-content a[data-social="Dataverse"] ~ .tooltip {
+    background-color: #0bc312;
   }
   .example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
     background-color: #ea4c89;
