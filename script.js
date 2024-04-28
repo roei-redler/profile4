@@ -75,3 +75,11 @@ checkOrientation();
 window.addEventListener('resize', checkOrientation);
 
 
+function goToURL1() {
+  // Replace 'URL_HERE' with the actual URL you want to navigate to
+  window.location.href = 'https://roei-redler.github.io/Certificate/';
+}
+function goToURL2() {
+  // Replace 'URL_HERE' with the actual URL you want to navigate to
+  window.location.href = 'https://www.abra-it.com/';
+}
