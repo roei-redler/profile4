@@ -481,3 +481,6 @@ body {
 .example-2 .icon-content a[data-social="PostgreSQL"] ~ .tooltip {
     background-color: #336791; /* PostgreSQL main color */
 }
+.example-2 .icon-content a[data-social="Python"] ~ .tooltip {
+    background-color: #0073cf; /* Python main color */
+}
