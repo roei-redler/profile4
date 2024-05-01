@@ -416,6 +416,8 @@ body {
   
   .example-2 .icon-content a:hover {
     box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+    width: 4rem;/*roei*/
+    height: 4rem;/*roei*/
   }
   
   .example-2 .icon-content a[data-social="Dynamics365"] ~ .tooltip {
