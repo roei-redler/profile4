@@ -499,3 +499,6 @@ body {
 .example-2 .icon-content a[data-social="VBA"] ~ .tooltip {
     background-color: #217346; /* VBA main color */
 }
+.example-2 .icon-content a[data-social="Postman"] ~ .tooltip {
+    background-color: #FF6C37; /* Postman main color */
+}
