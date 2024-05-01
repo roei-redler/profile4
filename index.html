@@ -12,6 +12,13 @@
 </head>
 
 <body>
+    <nav>
+        <label class="switch">
+          <input type="checkbox" onclick="togglePage()">
+          <span class="slider round"></span>
+        </label>
+      </nav>
+      <div class="page active-switch" id="page1">
     <div id="rotateMessage">Please rotate your device</div>
     <div class="profile">
         <header class="profile__header">
@@ -344,7 +351,342 @@
         <h6>v3.18</h6>
         
     </div>
-    
+</div> 
+
+<div class="page" id="page2">
+    <div id="rotateMessage">Please rotate your device</div>
+    <div class="profile">
+        <header class="profile__header">
+            <div class="profile__highlight__wrapper">
+                <div class="profile__highlight" onclick="goToURL1()">
+                    <img src="assets/Remove-bg.ai_1714076973947.png" alt="School Icon" width="24" height="24">
+                    B.A
+                </div>
+                <div class="profile__name">הקריה האקדמית אונו</div>
+            </div>
+            <div class="profile__avatar">
+                <img src="assets/hero.png" loading="lazy" alt="Mentor profile">
+            </div>
+            
+            <div class="profile__highlight__wrapper">
+                <div class="profile__highlight" onclick="goToURL2()">
+                    <img src="assets/logo-big.svg" alt="School Icon" width="24" height="24">
+                    CRM
+                </div>
+                <div class="profile__name">אברא פתרונות מיקרוסופט</div>
+            </div>
+        </header>
+        
+        <div class="profile__name">
+            
+            <h2>רואי רדלר<img src="assets/verified.svg" alt="Verified Ticker"></h2>
+            <p class="typing">CRM Microsoft Dynamics Specialist </p>
+        </div>
+        <ul class="social-links">
+            <li>
+                <a href="https://github.com/roei-redler">
+                    <img src="assets/Github-desktop-logo-symbol.svg.png" alt="School Icon" width="24" height="24">
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>-->
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/roei-redler/">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                        <path d="M8 11l0 5" />
+                        <path d="M8 8l0 .01" />
+                        <path d="M12 16l0 -5" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                    </svg>
+                </a>
+            </li>
+            <li >
+                <a href="https://learn.microsoft.com/en-us/users/roeiredler/">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-label="Microsoft" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#ffffff"></rect><path d="M75 75v171h171v-171z" fill="#f25022"></path><path d="M266 75v171h171v-171z" fill="#7fba00"></path><path d="M75 266v171h171v-171z" fill="#00a4ef"></path><path d="M266 266v171h171v-171z" fill="#ffb900"></path></g></svg></a>
+            </li>
+            <li hidden>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                </a>
+            </li>
+            <li hidden>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                        <path d="M10 9l5 3l-5 3z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 15l6 -6" />
+                        <path d="M11 6l.463 -.536a5 5 0 0 1 7.071 7.072l-.534 .464" />
+                        <path d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <main>
+            <div class="tabs-wrapper">
+                <ul class="tabs">
+                    <li class="active">
+                        <a id="tab1" href="#about">עליי</a>
+                    </li>
+                    <li>
+                        <a id="tab2" href="#skills">כישורים</a>
+                    </li>
+                    <li>
+                        <a id="tab3" href="#reviews">פרוייקטים</a>
+                    </li>
+                    <li hidden id="active-bg"></li>
+                </ul>
+            </div>
+            <div id="tab1-content" class="tab-content tab-content--active">
+                <p class="typingfast">
+                    כמומחה Dynamics CRM וכמומחה מוסמך של Microsoft, אני מתאים מערכות כדי לענות על צרכי הלקוח המדויקים. אני מקפיד לעמוד באיכות ובלוחות הזמנים באמצעות תקשורת יעילה ומסירות.
+                </p>
+                
+                
+                <h3>I can help with &#128588;
+                </h3>
+                <ul class="content-links">
+                    <li>
+                        <a class="typing"href="#career">Dynamics 365 CE
+
+                        </a>
+                    </li>
+                    <li><a class="typing" href="#interview">Power Apps Canvas</a></li>
+                    <li><a class="typing" href="#web-development">Web Development</a></li>
+                </ul>
+            </div>
+            <div id="tab2-content" class="tab-content">
+                <p>
+                    My content is focused on the latest web development technologies and tools. Here is the overview
+                    👨‍💻
+                </p>
+                <ul class="social-links example-2" style="list-style-type: none;display: grid;grid-template-columns: repeat(5, 0fr);justify-content: center;align-items: center;align-content: space-evenly;justify-items: center;">
+                    <li class="icon-content">
+                        <a href="#" data-social="Dynamics365">
+                            <img src="assets/Dynamics365_scalable.svg" alt="Dynamics 365" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Dynamics 365</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="Dataverse">
+                            <img src="assets/Dataverse_scalable.svg" alt="Dataverse" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Dataverse</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="PowerAutomate">
+                            <img src="assets/PowerAutomate_scalable.svg" alt="Power Automate" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Power Automate</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="PowerApps">
+                            <img src="assets/PowerApps_scalable.svg" alt="Power Apps" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Power Apps</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="PowerPages">
+                            <img src="assets/PowerPages_scalable.svg" alt="Power Pages" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Power Pages</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="PowerVirtualAgents">
+                            <img src="assets/PowerVirtualAgents_scalable.svg" alt="Power Virtual Agents" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Microsoft Copilot Studio</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="PowerPlatform">
+                            <img src="assets/PowerPlatform_scalable.svg" alt="Power Platform" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Power Platform</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="HTML5">
+                            <img src="assets/html-5-svgrepo-com.svg" alt="HTML 5" width="24" height="24">
+                        </a>
+                        <div class="tooltip">HTML 5</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="CSS3">
+                            <img src="assets/css3-logo-svgrepo-com.svg" alt="CSS 3" width="24" height="24">
+                        </a>
+                        <div class="tooltip">CSS 3</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="JavaScript">
+                            <img src="assets/js-svgrepo-com.svg" alt="JavaScript" width="24" height="24">
+                        </a>
+                        <div class="tooltip">JavaScript</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="Excel">
+                            <img src="assets/excel-svgrepo-com.svg" alt="Excel" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Excel</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="SharePoint">
+                            <img src="assets/ms-sharepoint-svgrepo-com.svg" alt="SharePoint" width="24" height="24">
+                        </a>
+                        <div class="tooltip">SharePoint</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="PowerBI">
+                            <img src="assets/630px-New_Power_BI_Logo.svg.png" alt="Power BI" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Power BI</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="GitHub">
+                            <img src="assets/github-svgrepo-com.svg" alt="GitHub" width="24" height="24">
+                        </a>
+                        <div class="tooltip">GitHub</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="AzureDevOps">
+                            <img src="assets/azure-devops-svgrepo-com.svg" alt="Azure DevOps" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Azure DevOps</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="SQLDatabase">
+                            <img src="assets/sql-database-generic-svgrepo-com.svg" alt="SQL Database" width="24" height="24">
+                        </a>
+                        <div class="tooltip">SQL Database</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="PostgreSQL">
+                            <img src="assets/pgsql-svgrepo-com.svg" alt="PostgreSQL" width="24" height="24">
+                        </a>
+                        <div class="tooltip">PostgreSQL</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="Python">
+                            <img src="assets/Python_logo_51.svg.png" alt="Python" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Python</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="Java">
+                            <img src="assets/Java-logo.png" alt="Java" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Java</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="JSON">
+                            <img src="assets/504451.webp" alt="JSON" width="24" height="24">
+                        </a>
+                        <div class="tooltip">JSON</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="XML">
+                            <img src="assets/Untitled-54-512.webp" alt="XML" width="24" height="24">
+                        </a>
+                        <div class="tooltip">XML</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="VBA">
+                            <img src="assets/vba-logo-175.webp" alt="VBA" width="24" height="24">
+                        </a>
+                        <div class="tooltip">VBA</div>
+                    </li>
+                    <li class="icon-content">
+                        <a href="#" data-social="Postman">
+                            <img src="assets/postman-icon.webp" alt="Postman" width="24" height="24">
+                        </a>
+                        <div class="tooltip">Postman</div>
+                    </li>
+                </ul>
+                
+                
+                <!--<ul class="content-links">
+                    <li>
+                        <a href="#html-css">
+                            HTML, CSS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#javascript">
+                            JavaScript
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#react-and-nextjs">
+                            React and Next.js
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#nodejs">
+                            Node.js (REST, GraphQL)
+                        </a>
+                    </li>
+                </ul>-->
+            </div>
+            <div id="tab3-content" class="tab-content">
+                <p>
+                    Here are some of the projects I'm working on 📚
+                </p>
+                <ul class="reviews">
+                    <li>
+                        <article class="review">
+                            <div class="review__avatar">
+                                <img src="assets/iec.jpg" alt="Avatar">
+                            </div>
+                            <div class="review__content">
+                                <h4>Israel Electric Corporation Ltd</h4>
+                                <p> As a Power Apps Canvas developer, I collaborated with Israel Electric Corporation Ltd to simplify company-wide forms using Dataverse. Our project aimed to streamline form processes and improve efficiency. </p> <p> By leveraging Power Apps and integrating them with Dataverse, we created user-friendly digital forms that employees could easily access and fill out. The use of Dataverse ensured seamless data storage and management. </p>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="review">
+                            <div class="review__avatar">
+                                <img src="assets/Israel_Railways.png" alt="Avatar">
+                            </div>
+                            <div class="review__content">
+                                <h4>Israel Railways Ltd</h4>
+                                <p>Implemented Microsoft Dynamics CRM with SAP integration and Power Automate at Israel Railways Ltd. Improved HR department operations by storing and executing flows based on SAP data. CRM facilitated efficient data management and Power Automate automated tasks, enhancing productivity.</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <button class="btn btn--primary" hidden>
+            Book Mentoring
+        </button>
+        <h6>v3.18</h6>
+        
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 

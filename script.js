@@ -112,3 +112,22 @@ textElements.forEach(function(textElement) {
         textElement.textContent += char;
     }
 });
+function togglePage() {
+  var page1 = document.getElementById('page1');
+  var page2 = document.getElementById('page2');
+  var checkbox = document.querySelector('.switch input');
+  var htmlElement = document.querySelector('html');
+  var bodyElement = document.querySelector('body');
+
+  if (checkbox.checked) {
+    page1.classList.remove('active-switch');
+    page2.classList.add('active-switch');
+    htmlElement.setAttribute('dir', 'rtl');
+    bodyElement.setAttribute('dir', 'rtl');
+  } else {
+    page1.classList.add('active-switch');
+    page2.classList.remove('active-switch');
+    htmlElement.removeAttribute('dir');
+    bodyElement.removeAttribute('dir');
+  }
+}
