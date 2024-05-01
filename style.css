@@ -419,6 +419,10 @@ body {
     width: 4rem;/*roei*/
     height: 4rem;/*roei*/
   }
+  .example-2 .icon-content a:hover img {
+    width: 35px;
+    height: 35px;
+  }
   
   .example-2 .icon-content a[data-social="Dynamics365"] ~ .tooltip {
     background-color: #053e9a; /* Dynamics 365 main color */
