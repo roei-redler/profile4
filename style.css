@@ -502,3 +502,6 @@ body {
 .example-2 .icon-content a[data-social="Postman"] ~ .tooltip {
     background-color: #FF6C37; /* Postman main color */
 }
+.example-2 .icon-content a[data-social="PowerBI"] ~ .tooltip {
+    background-color: #F2C811; /* Power BI main color */
+}
