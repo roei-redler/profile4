@@ -484,3 +484,18 @@ body {
 .example-2 .icon-content a[data-social="Python"] ~ .tooltip {
     background-color: #0073cf; /* Python main color */
 }
+.example-2 .icon-content a[data-social="Java"] ~ .tooltip {
+    background-color: #FFA500; /* Java main color */
+}
+
+.example-2 .icon-content a[data-social="JSON"] ~ .tooltip {
+    background-color: #F5A623; /* JSON main color */
+}
+
+.example-2 .icon-content a[data-social="XML"] ~ .tooltip {
+    background-color: #6AC47E; /* XML main color */
+}
+
+.example-2 .icon-content a[data-social="VBA"] ~ .tooltip {
+    background-color: #217346; /* VBA main color */
+}
