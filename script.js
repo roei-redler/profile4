@@ -130,4 +130,5 @@ function togglePage() {
     htmlElement.removeAttribute('dir');
     bodyElement.removeAttribute('dir');
   }
+  checkOrientation()
 }
