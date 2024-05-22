@@ -570,3 +570,14 @@ body {
     display: block;
   }
   
+.idf{
+    z-index: 99;
+    position: absolute;
+}
+.img-idf {
+    display: inline-block;
+    background-color: white;
+    border-radius: 50px; /* Adjust the border-radius as needed */
+}
+
+
